@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tw.mvp.view.custom.SmartImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:id="@+id/url"
+                                       android:layout_width="68dip"
+                                       android:layout_height="68dip"
+                                       android:background="@mipmap/ic_launcher"
+                                       android:scaleType="fitXY"/>

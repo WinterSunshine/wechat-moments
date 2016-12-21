@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Container.Panel_8"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_nodata_img"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_marginTop="-100dip"
+        android:contentDescription="@null"
+        android:src="@mipmap/icon_order_no_data"/>
+
+    <TextView
+        android:id="@+id/tv_nodata_content"
+        style="@style/TextView.Gray"
+        android:layout_gravity="center"
+        android:text="无数据"
+        android:textSize="@dimen/text_16_size"/>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<resources>
+
+    <!-- 基础主题样式 -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/bg_content</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:textColorPrimaryInverse">@color/bg_content</item>
+    </style>
+
+    <!-- 19以下的设备主题样式 -->
+    <style name="AppTheme" parent="BaseTheme"/>
+
+    <!-- 页面切换动画 -->
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slider_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slider_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slider_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slider_out_right</item>
+    </style>
+
+    <!-- ToolBar 样式集 -->
+    <style name="ToolBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:background">@color/colorToolBar</item>
+    </style>
+
+    <style name="ToolBar.LeftImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onBackClick</item>
+        <item name="android:src">@mipmap/back_up</item>
+        <item name="android:background">@drawable/selector_common_item_press</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:padding">@dimen/distance_8_size</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="ToolBar.CenterTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_20_size</item>
+    </style>
+
+    <!-- 组合条目样式集 -->
+    <style name="Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Container.Full">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Container.Normal">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Container.Panel_8">
+        <item name="android:padding">@dimen/distance_8_size</item>
+    </style>
+
+    <style name="Container.Panel_4">
+        <item name="android:padding">@dimen/distance_4_size</item>
+    </style>
+
+    <!-- 文本样式 -->
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextView.White">
+        <item name="android:textSize">@dimen/text_14_size</item>
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <style name="TextView.Black">
+        <item name="android:textSize">@dimen/text_14_size</item>
+        <item name="android:textColor">@color/font_black</item>
+    </style>
+
+    <style name="TextView.Gray">
+        <item name="android:textSize">@dimen/text_14_size</item>
+        <item name="android:textColor">@color/font_gray</item>
+    </style>
+
+    <style name="TextView.LightGray">
+        <item name="android:textSize">@dimen/text_14_size</item>
+        <item name="android:textColor">@color/font_light_gray</item>
+    </style>
+
+    <style name="TextView.Green">
+        <item name="android:textSize">@dimen/text_14_size</item>
+        <item name="android:textColor">@color/font_green</item>
+    </style>
+
+    <style name="TextView.Orange">
+        <item name="android:textSize">@dimen/text_14_size</item>
+        <item name="android:textColor">@color/font_orange</item>
+    </style>
+
+    <style name="TextView.Red">
+        <item name="android:textSize">@dimen/text_14_size</item>
+        <item name="android:textColor">@color/font_red</item>
+    </style>
+
+    <!-- Common样式 -->
+    <style name="Logo">
+        <item name="android:layout_width">@dimen/logo</item>
+        <item name="android:layout_height">@dimen/logo</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:src">@mipmap/item_loading</item>
+    </style>
+
+    <style name="HorizontalLineDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line</item>
+        <item name="android:background">@color/bg_line</item>
+    </style>
+
+    <style name="XlistView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:dividerHeight">@dimen/line</item>
+        <item name="android:divider">@color/bg_line</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+    </style>
+
+    <style name="XlistView.LargeDiveder">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dip</item>
+    </style>
+
+    <!-- Dialog样式 -->
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Dialog.Loading">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

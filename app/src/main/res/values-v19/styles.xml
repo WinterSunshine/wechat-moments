@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- 19的设备主题样式 -->
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="ToolBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dip</item>
+        <item name="android:paddingTop">30dip</item>
+        <item name="android:background">@color/colorToolBar</item>
+    </style>
+
+</resources>

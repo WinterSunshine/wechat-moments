@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- 21及以上的设备主题样式 -->
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:colorPrimaryDark">@color/colorToolBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:background">@color/colorToolBar</item>
+    </style>
+
+</resources>
+
